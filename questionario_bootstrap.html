@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"><!--tabela com caracteres acentuados-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Alphabook - Melhore sua qualidade de vida</title>
+
+		<script src="https://kit.fontawesome.com/7b98eaf50a.js" crossorigin="anonymous"></script>
+
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+
+		<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+	</head>
+	<body>
+
+		<main>
+		<h1>Vamos montar sua roda da vida</h1>
+		<p>Responda o questionário a seguir paa descobrir quais áreas da sua vida requerem mais atenção.</p>
+
+		<form id="questionario" method="post" action="grafico.html">
+
+			<!--action="http://jkorpela.fi/cgi-bin/echo.cgi"-->
+
+			<div class="row">
+				<div class="col-6">
+			<fieldset class="p-3 border center">
+				<legend>Pessoal</legend>
+			<label for="questao01">Como você avalia sua saúde e disposição</label>
+			<div class="row">
+			<input class="col-10" type="range" name="questao01" id="questao01" min="0" max="10" step="1" oninput="document.getElementById('valor01').innerHTML = this.value;"> 
+			<label class="col-2" id=valor01>5</label>
+			</div>
+
+			<label for="questao02">Como você avalia seu desenvolvimento intelectual</label>
+			<div class="row">
+			<input class="col-10" type="range" name="questao02" id="questao02" min="0" max="10" step="1" oninput="document.getElementById('valor02').innerHTML = this.value;"> 
+			<label class="col-2" id=valor02>5</label>
+			</div>
+
+			<label for="questao03">Como você avalia seu equilíbrio emocional</label>
+			<div class="row">
+			<input class="col-10" type="range" name="questao03" id="questao03" min="0" max="10" step="1" oninput="document.getElementById('valor03').innerHTML = this.value;"> 
+			<label class="col-2" id=valor03>5</label>
+			</div>
+		</fieldset>
+			</div>
+			<div class="col-6">
+		<fieldset class="p-3 border">
+			<legend>Profissional</legend>
+
+			<label for="questao04">Como você avalia sua realização e propósito?</label>
+			<div class="row">
+			<input class="col-10" type="range" name="questao04" id="questao04" min="0" max="10" step="1" oninput="document.getElementById('valor04').innerHTML = this.value;"> 
+			<label class="col-2" id=valor04>5</label>
+			</div>
+
+			<label for="questao05">Como você avalia seus recursos financeiros?</label>
+			<div class="row">
+			<input class="col-10" type="range" name="questao05" id="questao05" min="0" max="10" step="1" oninput="document.getElementById('valor05').innerHTML = this.value;"> 
+			<label class="col-2" id=valor05>5</label>
+			</div>
+
+			<label for="questao06">Como você avalia sua contribuição social?</label>
+			<div class="row">
+			<input class="col-10" type="range" name="questao06" id="questao06" min="0" max="10" step="1" oninput="document.getElementById('valor06').innerHTML = this.value;"> 
+			<label class="col-2" id=valor06>5</label>
+			</div>
+		</fieldset>
+			</div>
+		</div>
+			<input type="submit">
+
+		</form>
+
+	</main>
+
+
+
+
+	</body>
+</html>
